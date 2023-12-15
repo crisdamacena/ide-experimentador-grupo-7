@@ -4,7 +4,6 @@ import { readLogFile, extractBatteryData } from "../lib/logProcessorBattery"; //
 const PanelBattery = () => {
   const [data, setData] = useState([]); // Estado para os dados da tabela
   const [error, setError] = useState(""); // Estado para a mensagem de erro
-  const [test, setTest] = useState(""); // Estado para a mensagem de erro
 
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
@@ -22,17 +21,10 @@ const PanelBattery = () => {
     }
   };
 
-
-  const callBackend = async () => { //chamar o backend
-    await fetch("/trial/info/battery").then(async res => await res.text()).then(res => setTest(res))   //aqui terá o resultado do backend
-  }
-
   return (
     <div>
       <h2>React Table Example</h2>
-      <h3>{test}</h3>
       <input type="file" onChange={handleFileUpload} />
-      <button onClick={callBackend}>Chama backend</button>
       {error && <div style={{ color: "red" }}>{error}</div>}
       <table>
         <thead>

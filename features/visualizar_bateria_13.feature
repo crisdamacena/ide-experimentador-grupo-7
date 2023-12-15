@@ -1,3 +1,4 @@
+#language: pt
 Funcionalidade: Visualizar os dados de bateria do robô
 Eu como Engenheiro de Sistemas Robóticos
 Quero visualizar o status da bateria do robô em um dado momento

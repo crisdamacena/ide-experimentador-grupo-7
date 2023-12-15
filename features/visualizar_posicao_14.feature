@@ -1,3 +1,4 @@
+#language: pt
 Funcionalidade: visualizar os dados de posição do robô
 Eu como avaliador da navegação do robo
 Quero visualizar a posição do robô em um dado momento,
