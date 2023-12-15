@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'trial/battery' #view
   get 'hello/worldGet', to: "hello#index" 
   get 'trial/info/battery', to: "trial#info" #rota 
+  get 'log/get_all', to: "log#get_all" #rota
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
